@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+       <div class="container header p-4 ">
+        <h3 class="my-4 fs-3 fw-bold">Bookmarker</h3>
+       </div>
+       <div class="container content px-2">
+        <div class="inner text-center p-4">
+            <div class="info">
+                <h2 class="fs-4 fw-bold my-4">Bookmark your favorite sites </h2>
+                <p class="fw-bold name py-3 m-0">Site Name</p>
+                <input type="text" id="siteName" placeholder="Bookmark Name" class="inputs p-1 w-75" >
+                <p class="alert text-center fw-bold w-75 p-1 mt-2 m-auto d-none" id="nameError1" >Name is required</p>
+                <p class="alert text-center fw-bold w-75 p-1 mt-2 m-auto d-none" id="nameError2">this url already exist</p>
+                <p class="fw-bold name py-3 m-0" >Site URL</p>
+                <input type="text" id="siteUrl" placeholder="website URL" class="inputs p-1 w-75 ">
+                <p class="alert text-center fw-bold w-75 p-1 mt-2 m-auto d-none" id="urlError">Url Field is required</p>
+                <div class="butt my-3">
+                    <button class="btn btn-primary" onclick="addData()">Submit</button>
+                </div>
+            </div>
+
+        </div>
+
+       </div>
+       <div class="container px-2 my-2 mx-auto">
+        <div class="cont-inner" id="displayInput">
+        </div>
+       </div>
+       <footer>
+        <div class="container end">
+            <p class="end-p fw-bold">© 2019 Bookmarker Inc.</p>
+        </div>
+       </footer>
+      
+        
+        
+
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
